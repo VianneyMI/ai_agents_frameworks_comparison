@@ -4,3 +4,4 @@ Create a simple agent with the following capabilities:
 * Web Search
 * Useful API communication TDB
 * (Analytical skills ?)
+* Flux RSS ?
