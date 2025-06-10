@@ -1,0 +1,778 @@
+[
+  {
+    "name": "Lex Fridman",
+    "bio": "Host of Lex Fridman Podcast.Interested in robots and humans.",
+    "twitter_username": "@lexfridman",
+    "nb_twitter_followers": 4200000,
+    "type": "Mega",
+    "gender": "Male",
+    "links": [
+      "https://lexfridman.com/podcast/"
+    ],
+    "rank": 1
+  },
+  {
+    "name": "Sam Altman",
+    "bio": "AI is cool i guess",
+    "twitter_username": "@sama",
+    "nb_twitter_followers": 3100000,
+    "type": "Mega",
+    "gender": "Male",
+    "links": [
+      "https://blog.samaltman.com/"
+    ],
+    "rank": 2
+  },
+  {
+    "name": "Kai-Fu Lee",
+    "bio": "#AI Expert, CEO of @01ai_yi and Chairman of 创新工场 @sinovationvc, former President of Google China, Author of AI 2041 and NYT Bestseller AI Superpowers",
+    "twitter_username": "@kaifulee",
+    "nb_twitter_followers": 1500000,
+    "type": "Mega",
+    "gender": "Male",
+    "links": [],
+    "rank": 3
+  },
+  {
+    "name": "John Carmack",
+    "bio": "AGI at Keen Technologies, former CTO Oculus VR, Founder Id Software and Armadillo Aerospace",
+    "twitter_username": "@ID_AA_Carmack",
+    "nb_twitter_followers": 1100000,
+    "type": "Mega",
+    "gender": "Male",
+    "links": [],
+    "rank": 4
+  },
+  {
+    "name": "Andrew Ng",
+    "bio": "Co-Founder of Coursera; Stanford CS adjunct faculty. Former head of Baidu AI Group/Google Brain. #ai #machinelearning, #deeplearning #MOOCs",
+    "twitter_username": "@AndrewYNg",
+    "nb_twitter_followers": 1100000,
+    "type": "Mega",
+    "gender": "Male",
+    "links": [],
+    "rank": 5
+  },
+  {
+    "name": "Andrej Karpathy",
+    "bio": "Building @EurekaLabsAI. Previously Director of AI @ Tesla, founding team @ OpenAI, CS231n/PhD @ Stanford. I like to train large deep neural nets ???",
+    "twitter_username": "@karpathy",
+    "nb_twitter_followers": 1000000,
+    "type": "Mega",
+    "gender": "Male",
+    "links": [],
+    "rank": 6
+  },
+  {
+    "name": "Sean Gardner",
+    "bio": "Traveler ?️ (30 countries) • Board @FreeNPTech • Alum: Apple Inc., Microsoft • producing ? with @RashaGoel • ?#AI #ML #AIEthics #AILaw #GenAI #LLMs #travel",
+    "twitter_username": "@2morrowknight",
+    "nb_twitter_followers": 730400,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 7
+  },
+  {
+    "name": "Yann LeCun",
+    "bio": "Professor at NYU. Chief AI Scientist at Meta.Researcher in AI, Machine Learning, Robotics, etc.ACM Turing Award Laureate.",
+    "twitter_username": "@ylecun",
+    "nb_twitter_followers": 804000,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 8
+  },
+  {
+    "name": "Robert Scoble",
+    "bio": "AI was launched in my house. Well, at least Siri, the first AI app, was. Former strategist @Microsoft. Love new companies and new things for AI show: Unaligned.",
+    "twitter_username": "@Scobleizer",
+    "nb_twitter_followers": 509300,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 9
+  },
+  {
+    "name": "Fei-Fei Li",
+    "bio": "Prof (CS @Stanford), Co-Director @StanfordHAI, CoFounder/Chair @ai4allorg, Researcher #AI #computervision #ML AI+healthcare",
+    "twitter_username": "@drfeifei",
+    "nb_twitter_followers": 470700,
+    "type": "Macro",
+    "gender": "Female",
+    "links": [],
+    "rank": 10
+  },
+  {
+    "name": "Kirk Borne",
+    "bio": "Advisor to startups. Freelancer. Founder of @LeadershipData. Global Speaker. Top influencer #BigData #DataScience #AI #IoT #ML #B2B. PhD Astrophysics @Caltech",
+    "twitter_username": "@KirkDBorne",
+    "nb_twitter_followers": 455100,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 11
+  },
+  {
+    "name": "François Chollet",
+    "bio": "Deep learning @google. Creator of Keras. Author of 'Deep Learning with Python'. Co-founder @arcprize. Opinions are my own.",
+    "twitter_username": "@fchollet",
+    "nb_twitter_followers": 489700,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 12
+  },
+  {
+    "name": "Rowan Cheung",
+    "bio": "Founder @therundownai. Sharing the latest developments in the world of artificial intelligence.",
+    "twitter_username": "@rowancheung",
+    "nb_twitter_followers": 524500,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 13
+  },
+  {
+    "name": "Antonio Grasso",
+    "bio": "Technologist in the Creator Economy | Global B2B Influencer | Thought Leader & Author | Advocate for Sustainability",
+    "twitter_username": "@antgrasso",
+    "nb_twitter_followers": 345700,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 14
+  },
+  {
+    "name": "Demis Hassabis",
+    "bio": "Co-founder & CEO @GoogleDeepMind - working on AGI. Trying to understand the fundamental nature of reality. Also revolutionising drug discovery @IsomorphicLabs",
+    "twitter_username": "@demishassabis",
+    "nb_twitter_followers": 370900,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 15
+  },
+  {
+    "name": "Ronald van Loon",
+    "bio": "Helping AI driven companies generate value•Top10Influencer #AI #BigData #DataScience #IoT #MachineLearning #Analytics #Cloud",
+    "twitter_username": "@Ronald_vanLoon",
+    "nb_twitter_followers": 335200,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 16
+  },
+  {
+    "name": "Tamara McCleary",
+    "bio": "CEO @ThuliumCo | Exploring Human Purpose in an #AI-Driven World | Research Focus | #TechTrends #FutureofAI #AIResearch #AIEthics #EthicalAI | #AIInnovation #AGI",
+    "twitter_username": "@TamaraMcCleary",
+    "nb_twitter_followers": 291900,
+    "type": "Macro",
+    "gender": "Female",
+    "links": [],
+    "rank": 17
+  },
+  {
+    "name": "Geoffrey Hinton",
+    "bio": "deep learning",
+    "twitter_username": "@geoffreyhinton",
+    "nb_twitter_followers": 388400,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 18
+  },
+  {
+    "name": "Ian Goodfellow",
+    "bio": "Research Scientist at DeepMind. Opinions my own. Inventor of GANs. Lead author of https://t.co/M6vl8pEifa",
+    "twitter_username": "@goodfellow_ian",
+    "nb_twitter_followers": 315700,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 19
+  },
+  {
+    "name": "Jeff Dean",
+    "bio": "Chief Scientist, Google DeepMind and Google Research. Co-designer/implementor of things like @TensorFlow, MapReduce, Bigtable, Spanner, Gemini .. (he/him)",
+    "twitter_username": "@jeffdean",
+    "nb_twitter_followers": 310400,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 20
+  },
+  {
+    "name": "Erik Brynjolfsson",
+    "bio": "Director @DigEconLabProfessor @StanfordHAI @SIEPR @Stanford @NBERPubs https://t.co/D2bPyxoFEf",
+    "twitter_username": "@erikbryn",
+    "nb_twitter_followers": 210200,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 21
+  },
+  {
+    "name": "Timnit Gebru",
+    "bio": "she/herI am at @**** via the #TwitterMigration. DAIR's Mastodon account is at",
+    "twitter_username": "@timnitgebru",
+    "nb_twitter_followers": 169100,
+    "type": "Macro",
+    "gender": "Female",
+    "links": [],
+    "rank": 22
+  },
+  {
+    "name": "Oriol Vinyals",
+    "bio": "VP of Research & Deep Learning Lead, Google DeepMind. Gemini co-lead.Past: AlphaStar, AlphaFold, AlphaCode, WaveNet, seq2seq, distillation, TF.",
+    "twitter_username": "@oriolvinyalsml",
+    "nb_twitter_followers": 169300,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 23
+  },
+  {
+    "name": "Vincent Boucher",
+    "bio": "Vincent Boucher, President of @Montreal_AI #MontrealAI | B. Sc. Physics, M. A. Govt. Policy Analysis and M. Sc. Aerospace Engineering | $AGI by AGI.Eth #AGI",
+    "twitter_username": "@ceobillionaire",
+    "nb_twitter_followers": 155000,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 24
+  },
+  {
+    "name": "Soumith Chintala",
+    "bio": "Cofounded and lead @PyTorch at Meta.Also dabble in robotics at NYU.AI is delicious when it is accessible and open-source.",
+    "twitter_username": "@soumithchintala",
+    "nb_twitter_followers": 199800,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 25
+  },
+  {
+    "name": "Varun Mayya",
+    "bio": "waiting for agi. i live to experiment. don't take me too seriously I am an idiot. trying to build distractions (content, AI tools, games) for a post AGI world.",
+    "twitter_username": "@waitin4agi_",
+    "nb_twitter_followers": 165500,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 26
+  },
+  {
+    "name": "Sally Eaves",
+    "bio": "Innovating #tech #education #business CEO CTO Advisor Prof #AI #5G #SDGs #CyberSecurity #Cloud #IoT #ESG #TechForGood #FinTech #STEM #BHUSA #MWC24",
+    "twitter_username": "@sallyeaves",
+    "nb_twitter_followers": 138200,
+    "type": "Macro",
+    "gender": "Female",
+    "links": [],
+    "rank": 27
+  },
+  {
+    "name": "Bernard Marr",
+    "bio": "? Internationally Best-selling #Author ? #KeynoteSpeaker ? #Futurist ? #Business, #Tech & #Data Advisor #AI #AR #VR #BigData #Robotics #MachineLearning",
+    "twitter_username": "@bernardmarr",
+    "nb_twitter_followers": 138700,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [
+      "https://podcasts.bernardmarr.com/"
+    ],
+    "rank": 28
+  },
+  {
+    "name": "Fabio Moioli",
+    "bio": "Consultant at @SpencerStuart. Passionate about #Human (and #Artificial) #Intelligences! prev. @Microsoft @McKinsey #VicePresident @Capgemini @Ericsson",
+    "twitter_username": "@fabiomoioli",
+    "nb_twitter_followers": 129600,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 29
+  },
+  {
+    "name": "Pascal Bornet",
+    "bio": "Top Voice in Tech | Best-selling Author | Keynote speaker | AI & Automation expert | Forbes Tech Council | 1 Million+ followers",
+    "twitter_username": "@pascal_bornet",
+    "nb_twitter_followers": 158100,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 30
+  },
+  {
+    "name": "Gary Marcus",
+    "bio": "Built two AI companies, wrote six books, tried to warn you about a lot of things.",
+    "twitter_username": "@GaryMarcus",
+    "nb_twitter_followers": 173000,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 31
+  },
+  {
+    "name": "Rob Lennon",
+    "bio": "17+ years startups. 47x published author. Teaching AI and business frameworks for entrepreneurs + sidehustlers. Get $1500 in courses for $175 → https://t.co/xaU7UVJBph",
+    "twitter_username": "@thatroblennon",
+    "nb_twitter_followers": 127300,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 32
+  },
+  {
+    "name": "Randy Olson",
+    "bio": "Full stack #DataScience. AI and #MachineLearning researcher. #DataViz aficionado. Consultant. Community leader for @DataIsBeautiful. He/him.",
+    "twitter_username": "@randal_olson",
+    "nb_twitter_followers": 116400,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 33
+  },
+  {
+    "name": "Nicolas Babin",
+    "bio": "Key Opinion Leader #KOL, author, consultant & speaker on #AI, #5G, #digital #digitaltransformation, #ehealth, #gamification #sustainability RT # endorsement",
+    "twitter_username": "@Nicochan33",
+    "nb_twitter_followers": 116800,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 34
+  },
+  {
+    "name": "Chris Messina",
+    "bio": "In 2007, I invented the hashtag and retired from Twitter in 2023. DMs still work. Book time with me: https://t.co/xvXww6nIKS",
+    "twitter_username": "@chrismessina",
+    "nb_twitter_followers": 109300,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 35
+  },
+  {
+    "name": "Iain Brown",
+    "bio": "Head of #DataScience @SASSoftware | Adjunct Prof @UniSouthampton | Author | #DataScientist | Interests #AI #ML #DL #NLP #IoT #BigData | Opinions my own",
+    "twitter_username": "@iainljbrown",
+    "nb_twitter_followers": 108200,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 36
+  },
+  {
+    "name": "Harold Sinnott",
+    "bio": "Tech Thought Leader | #Influencer #CES2025 #AI #IoT #5G #DigitalTransformation #B2B Marketing #Telecom | #DTW #InnovateAmericas & Asia | #MWC25",
+    "twitter_username": "@HaroldSinnott",
+    "nb_twitter_followers": 112700,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 37
+  },
+  {
+    "name": "Data Chaz",
+    "bio": "Developer Advocate @Streamlit (acq. @SnowflakeDB) | prev. Samsung • ? about LLMs, AI, Python, Data Sci, Web Apps & SEO • My heart is open source • Views mine!",
+    "twitter_username": "@DataChaz",
+    "nb_twitter_followers": 114100,
+    "type": "Macro",
+    "gender": "Male",
+    "links": [],
+    "rank": 38
+  },
+  {
+    "name": "Lorenzo Green",
+    "bio": "Tweets about AI, business & design. Sold 4 companies, building 3. I run Twitter experiments.",
+    "twitter_username": "@mrgreen",
+    "nb_twitter_followers": 94400,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 39
+  },
+  {
+    "name": "Nando de Freitas",
+    "bio": "I research intelligence to understand what we are, and to harness it wisely. I lead a wonderfully creative AI team at @GoogleDeepMind who inspire me everyday.",
+    "twitter_username": "@NandoDF",
+    "nb_twitter_followers": 96100,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 40
+  },
+  {
+    "name": "Claire Silver",
+    "bio": "AI art ~2018 | @LACMA | #1629 | Founder @accelerateart | Taste is the new skill | Isaiah 41:10 | https://t.co/QcR3biRe2Y | contact:",
+    "twitter_username": "@clairesilver12",
+    "nb_twitter_followers": 92700,
+    "type": "Micro",
+    "gender": "Female",
+    "links": [],
+    "rank": 41
+  },
+  {
+    "name": "Kate Crawford",
+    "bio": "Book: ATLAS OF AI Exhibition: CALCULATING EMPIRES Mapping AI, politics & power https://t.co/f3V3WjBtb6 | MSR-NYC | @USCAnnenberg | TIME100AI",
+    "twitter_username": "@katecrawford",
+    "nb_twitter_followers": 85300,
+    "type": "Micro",
+    "gender": "Female",
+    "links": [],
+    "rank": 42
+  },
+  {
+    "name": "Hassan Rashidi",
+    "bio": "Engineer, Keynote Speaker, Advisor, Insights on Product Development, Manufacturing, How to Turn Your Ideas into Reality, Success, https://t.co/70WQ2H6zLE",
+    "twitter_username": "@drhassanrashidi",
+    "nb_twitter_followers": 78500,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 43
+  },
+  {
+    "name": "Abhishek Thakur",
+    "bio": "? I build AutoTrain @huggingface??‍? World's First 4x Grand Master @kaggle? YouTube 100k+: https://t.co/BHnem8fTu5⭐ GitHub Star",
+    "twitter_username": "@abhi1thakur",
+    "nb_twitter_followers": 83100,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 44
+  },
+  {
+    "name": "Yohei Nakajima",
+    "bio": "VC by day, builder by night: @untappedvc, @babyagi_, @pixelbeastsnft. Build-in-public log: https://t.co/UdHHGbZba5",
+    "twitter_username": "@yoheinakajima",
+    "nb_twitter_followers": 72600,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 45
+  },
+  {
+    "name": "Helen Yu",
+    "bio": "#DigitalTransformation obsessed #CXO and #GrowthHacker. Find me at the intersection of #Tech and #Humanity. #AI #DataAnalytics #FinTech #CX #IoT #CyberSecurity",
+    "twitter_username": "@YuHelenYu",
+    "nb_twitter_followers": 67100,
+    "type": "Micro",
+    "gender": "Female",
+    "links": [],
+    "rank": 46
+  },
+  {
+    "name": "Nige Roberts-Willson",
+    "bio": "#digital #artist and #creator founder https://t.co/MszdQncmxQ",
+    "twitter_username": "@nigewillson",
+    "nb_twitter_followers": 58600,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 47
+  },
+  {
+    "name": "Karen Hao",
+    "bio": "ai reporter. national magazine award winner. contributing writer @theatlantic. formerly @wsj @techreview @KSJatMIT @TAPP_Project. email: https://t.co/WGiyLyOCRP",
+    "twitter_username": "@_karenhao",
+    "nb_twitter_followers": 61600,
+    "type": "Micro",
+    "gender": "Female",
+    "links": [],
+    "rank": 48
+  },
+  {
+    "name": "Nathan Lands",
+    "bio": "Building https://t.co/GRevWVdB4B, the techno-optimist newsletter.Co-host of https://t.co/vTLojIEeMKVenture Partner @SparkLabsGroup",
+    "twitter_username": "@nathanlands",
+    "nb_twitter_followers": 63900,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 49
+  },
+  {
+    "name": "Giuliano Liguori",
+    "bio": "Get daily insights on AI, Digital Transformation, and innovation to help you thrive in the tech era?️CEO @Kenovy_it",
+    "twitter_username": "@ingliguori",
+    "nb_twitter_followers": 58100,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 50
+  },
+  {
+    "name": "Monica Rogati",
+    "bio": "Data Science & AI advisor; fractional CDO. Former VP of Data @Jawbone & @LinkedIn data scientist. Equity Partner @DCVC. CMU CS PhD.",
+    "twitter_username": "@mrogati",
+    "nb_twitter_followers": 51600,
+    "type": "Micro",
+    "gender": "Female",
+    "links": [],
+    "rank": 51
+  },
+  {
+    "name": "Oliver Christie",
+    "bio": "New technology things.",
+    "twitter_username": "@oliverchristie",
+    "nb_twitter_followers": 49300,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 52
+  },
+  {
+    "name": "Martin Ford",
+    "bio": "Futurist & NY Times bestselling author of 4 books on #AI, including #RiseoftheRobots (https://t.co/E3AMeiB96P) about how AI and robots will automate jobs.",
+    "twitter_username": "@mfordfuture",
+    "nb_twitter_followers": 46700,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 53
+  },
+  {
+    "name": "Nathan Benaich",
+    "bio": "solo member of investment staff @airstreet, brewing ambition @airstreetcafe, next token predictor @airstreetpress",
+    "twitter_username": "@nathanbenaich",
+    "nb_twitter_followers": 53100,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 54
+  },
+  {
+    "name": "Terence Leung",
+    "bio": "#AutonomousSupplyChain | Top 50 Outstanding #AI Business #Influencer | Top 22 AI Influencer to Follow by 2023 | Top 100 Global #ThoughtLeaders | @blueyonder",
+    "twitter_username": "@terenceleungsf",
+    "nb_twitter_followers": 47800,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 55
+  },
+  {
+    "name": "Allie Miller",
+    "bio": "#1 Most Followed Voice in AI Business (1.5M followers). Former Amazon, IBM. Fortune 500 and startup AI advisor, public speaker. AI-First course - ? below",
+    "twitter_username": "@alliekmiller",
+    "nb_twitter_followers": 56200,
+    "type": "Micro",
+    "gender": "Female",
+    "links": [],
+    "rank": 56
+  },
+  {
+    "name": "Catherine Adenle",
+    "bio": "?Top 22 Women in Tech and Influencers to Follow 2022. #Tech #AI #ML #Data, #Cybersec, #GenAI,Cert #ChangeManagement Professional, #Careeradvice, ❤️ Family",
+    "twitter_username": "@CatherineAdenle",
+    "nb_twitter_followers": 43100,
+    "type": "Micro",
+    "gender": "Female",
+    "links": [],
+    "rank": 57
+  },
+  {
+    "name": "Bilawal Sidhu",
+    "bio": "? Blending Reality & Imagination ? l ?️ Host, The TED AI Show | Scout, A16z ? Ex-Google AR/VR & 3D Maps | ? Writing @ https://t.co/uf98Oqqeeu",
+    "twitter_username": "@bilawalsidhu",
+    "nb_twitter_followers": 51300,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 58
+  },
+  {
+    "name": "Marcus Borba",
+    "bio": "Global Thought Leader: Data & AI",
+    "twitter_username": "@marcusborba",
+    "nb_twitter_followers": 41000,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 59
+  },
+  {
+    "name": "Mike Tamir",
+    "bio": "Distinguished #MachineLearning Scientist at Shopify & UC Berkeley Faculty Former head of #DataScience at #Uber ATG and SIG (tweets are my own)",
+    "twitter_username": "@miketamir",
+    "nb_twitter_followers": 39100,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 60
+  },
+  {
+    "name": "Kate Darling",
+    "bio": "Robotics ethics & policy at MIT @medialab and Boston Dynamics AI Institute. she/her. Author of \"The New Breed\": https://t.co/TPSdhgflir",
+    "twitter_username": "@grok_",
+    "nb_twitter_followers": 37900,
+    "type": "Micro",
+    "gender": "Female",
+    "links": [],
+    "rank": 61
+  },
+  {
+    "name": "Vinod Sharma",
+    "bio": "FinTech CTO | #DigitalTransformation Leader | Keynote Speaker | Researcher | #Blockchain #Physics #MachineLearning #DataScience #Analytics | Views are my own",
+    "twitter_username": "@vinod1975",
+    "nb_twitter_followers": 37600,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 62
+  },
+  {
+    "name": "Sven Philipsen",
+    "bio": "Founder & CEO prduct. Futurist and innovator. Expert #AI #Sustainability #tech #startup #blockchain #Industry40",
+    "twitter_username": "@svenphilipsen",
+    "nb_twitter_followers": 43300,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 63
+  },
+  {
+    "name": "Amitav Bhattacharjee",
+    "bio": "CEO @TechAsiaLab @BITspilaniindia Alum | Tweets for #STEM #IT #Stratup #Technology #TechInfluencer -- #ESG #SDG #CSR #sustainability",
+    "twitter_username": "@bamitav",
+    "nb_twitter_followers": 36400,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 64
+  },
+  {
+    "name": "Lucian Fogoros",
+    "bio": "Co-Founder https://t.co/KwXjxubObe Advisory Board Cleveland State University Computer Eng. #IIoT #AI #ML #CxO #IndustrialTransformation #ICSCybersecurity #AR",
+    "twitter_username": "@fogoros",
+    "nb_twitter_followers": 31600,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 65
+  },
+  {
+    "name": "Cade Metz",
+    "bio": "New York Times reporter, covering A.I., driverless cars, and other changes: ****. My book, \"Genius Makers\": https://t.co/TJBqNRKR5Q.",
+    "twitter_username": "@CadeMetz",
+    "nb_twitter_followers": 31000,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 66
+  },
+  {
+    "name": "Rodney Brooks",
+    "bio": "Distinguishing hype-notism from plausibility one press release at a time. I post regularly as @rodneyabrooks at https://t.co/sF7HmACXdd cofounder at https://t.co/LUTTbi3pds",
+    "twitter_username": "@rodneyabrooks",
+    "nb_twitter_followers": 31900,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 67
+  },
+  {
+    "name": "Max Welling",
+    "bio": "",
+    "twitter_username": "@wellingmax",
+    "nb_twitter_followers": 34700,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 68
+  },
+  {
+    "name": "Mark Tabladillo",
+    "bio": "AI @Microsoft",
+    "twitter_username": "@marktabnet",
+    "nb_twitter_followers": 28300,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 69
+  },
+  {
+    "name": "Oren Etzioni",
+    "bio": "Founder, https://t.co/IQ6xAlnKcR. Professor Emeritus, UW. Technical Director, AI2 Incubator. Venture Partner, Madrona. Founding CEO, AIlen Institute for AI (AI2).",
+    "twitter_username": "@etzioni",
+    "nb_twitter_followers": 27500,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 70
+  },
+  {
+    "name": "Alex J. Champandard",
+    "bio": "Building tools and teams where humans ≫ machines. AI, ML, research & development. co-Founded #CreativeAI #⚘",
+    "twitter_username": "@alexjc",
+    "nb_twitter_followers": 26500,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 71
+  },
+  {
+    "name": "Gene Kogan",
+    "bio": "My avatars @eden_art_ @abraham_ai_ @mars_college",
+    "twitter_username": "@genekogan",
+    "nb_twitter_followers": 25900,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 72
+  },
+  {
+    "name": "Martin F. Robbins",
+    "bio": "Haver of opinions.",
+    "twitter_username": "@mjrobbins",
+    "nb_twitter_followers": 24000,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 73
+  },
+  {
+    "name": "Aaron Ng",
+    "bio": "populating the metaverse @hyperonline_ (ycw21) & connecting you to open source artificial intelligence @apolloaiapp. helped cos like @meta, @dydx, @cashapp",
+    "twitter_username": "@localghost",
+    "nb_twitter_followers": 25800,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 74
+  },
+  {
+    "name": "Bob Gourley",
+    "bio": "CTO at @OODA where we research and report on the future of AI and other disruptive technologies, cybersecurity and geopolitical developments. Former USN.",
+    "twitter_username": "@bobgourley",
+    "nb_twitter_followers": 7300,
+    "type": "Nano",
+    "gender": "Male",
+    "links": [],
+    "rank": 75
+  },
+  {
+    "name": "Andy Jankowski",
+    "bio": "Non-Executive Director.#AI #Advisor and Business Consultant.",
+    "twitter_username": "@andyjankowski",
+    "nb_twitter_followers": 19500,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 76
+  },
+  {
+    "name": "Paul Roetzer",
+    "bio": "Founder Marketing AI Institute (@Mktgai) and SmarterX (@SmarterXAI). Creator of Marketing AI Conference (MAICON). Co-host of @aishowpod.",
+    "twitter_username": "@paulroetzer",
+    "nb_twitter_followers": 20600,
+    "type": "Micro",
+    "gender": "Male",
+    "links": [],
+    "rank": 77
+  }
+]
