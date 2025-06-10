@@ -1,11 +1,11 @@
 [project]
-name = "technology_scout"
+name = "scripts"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "smolagents[gradio]>=1.17.0",
+    "pandas>=2.3.0",
 ]
 
 [dependency-groups]
