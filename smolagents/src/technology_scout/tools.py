@@ -16,15 +16,21 @@ def select_from_db(query: str) -> pd.DataFrame:
     Table:
 
     - {influences_table_name}:
-        - id: int
-        - rank: int
+
         - name: str
+            - The name of the influencer.
+        - rank: int
+            - The rank of the influencer in the database.
         - bio: str
+            - A short bio of the influencer.
         - twitter_username: str
+            - The twitter username of the influencer.
         - nb_twitter_followers: str
-        - type: str
+            - The number of twitter followers of the influencer.
         - gender: str
+            - The gender of the influencer.
         - links: list[str]
+            - A list of links to the influencer's website.
 
     Some of the fields above are optional.
 

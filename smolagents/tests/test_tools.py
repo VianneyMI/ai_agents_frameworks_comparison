@@ -20,7 +20,7 @@ class TestSelectFromDb:
 
         result = select_from_db(demo_query)
         assert isinstance(result, pd.DataFrame)
-        assert result.shape == (10, 3)
+        assert result.shape == (10, 3), f"Result: {result}"
 
 
 class TestSelectFromDbToolUsageByAgent:
@@ -32,7 +32,7 @@ class TestSelectFromDbToolUsageByAgent:
         )
 
         result = agent.run("Who is the most proeminent AI personality ?")
-        assert "lex fridman" in result.lower()
+        assert "lex fridman" in result.lower(), f"Result: {result}"
 
 
 def main() -> None:

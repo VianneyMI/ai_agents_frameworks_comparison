@@ -8,7 +8,8 @@ from technology_scout.observer import setup_langfuse_tracer
 
 setup_langfuse_tracer()
 
-DEFAULT_MODEL_ID = "gemini/gemini-2.5-flash-preview-04-17"
+# DEFAULT_MODEL_ID = "gemini/gemini-2.5-flash-preview-04-17"
+DEFAULT_MODEL_ID = "openai/gpt-4o"
 
 
 litellm._turn_on_debug()
