@@ -6,7 +6,10 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "duckduckgo-search>=8.0.4",
-    "smolagents[gradio,litellm]>=1.17.0",
+    "openinference-instrumentation-smolagents>=0.1.13",
+    "opentelemetry-exporter-otlp>=1.34.1",
+    "opentelemetry-sdk>=1.34.1",
+    "smolagents[gradio,litellm,telemetry]>=1.17.0",
 ]
 
 [dependency-groups]
