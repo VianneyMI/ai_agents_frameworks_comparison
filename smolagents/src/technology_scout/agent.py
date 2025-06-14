@@ -1,8 +1,12 @@
 """SmolAgents Technology Scout Agent."""
 
+import litellm
 from smolagents import CodeAgent, LiteLLMModel, Tool
 
 DEFAULT_MODEL_ID = "gemini/gemini-2.5-flash-preview-04-17"
+
+
+litellm._turn_on_debug()
 
 
 def get_model(model_id: str = DEFAULT_MODEL_ID) -> LiteLLMModel:
