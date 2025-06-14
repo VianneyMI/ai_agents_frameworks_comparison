@@ -33,3 +33,17 @@ class TestSelectFromDbToolUsageByAgent:
 
         result = agent.run("Who is the most proeminent AI personality ?")
         assert "lex fridman" in result.lower()
+
+
+def main() -> None:
+    """Main function."""
+
+    test_select_from_db = TestSelectFromDb()
+    test_select_from_db.test_on_simple_query()
+
+    test_select_from_db_tool_usage_by_agent = TestSelectFromDbToolUsageByAgent()
+    test_select_from_db_tool_usage_by_agent.test_on_simple_task()
+
+
+if __name__ == "__main__":
+    main()

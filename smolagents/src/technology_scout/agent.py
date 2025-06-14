@@ -3,6 +3,11 @@
 import litellm
 from smolagents import CodeAgent, LiteLLMModel, Tool
 
+from technology_scout.observer import setup_langfuse_tracer
+
+
+setup_langfuse_tracer()
+
 DEFAULT_MODEL_ID = "gemini/gemini-2.5-flash-preview-04-17"
 
 
@@ -22,6 +27,8 @@ def create_agent(
     tools: list[Tool] | None = None,
 ) -> CodeAgent:
     """Create a technology scout agent."""
+
+    setup_langfuse_tracer()
 
     if tools is None:
         tools = []
