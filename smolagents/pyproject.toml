@@ -5,10 +5,13 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "smolagents[gradio]>=1.17.0",
+    "duckduckgo-search>=8.0.4",
+    "smolagents[gradio,litellm]>=1.17.0",
 ]
 
 [dependency-groups]
 dev = [
     "ipykernel>=6.29.5",
+    "pytest>=8.4.0",
+    "pytest-asyncio>=1.0.0",
 ]
