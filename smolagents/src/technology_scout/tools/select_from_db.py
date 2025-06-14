@@ -5,7 +5,7 @@ import pandas as pd
 from smolagents import tool
 
 influences_table_name = "influencers"
-path_to_database = Path(__file__).parents[3] / "data" / "ai_watch.db"
+path_to_database = Path(__file__).parents[4] / "data" / "ai_watch.db"
 
 
 def select_from_db(query: str) -> pd.DataFrame:

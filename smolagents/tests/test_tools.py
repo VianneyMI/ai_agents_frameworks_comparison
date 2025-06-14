@@ -1,5 +1,5 @@
 from technology_scout.agent import create_agent
-from technology_scout.tools import (
+from technology_scout.tools.select_from_db import (
     select_from_db,
     select_from_db_tool,
     influences_table_name,

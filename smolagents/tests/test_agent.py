@@ -1,4 +1,3 @@
-import pytest
 from smolagents import CodeAgent
 from technology_scout.agent import create_agent
 

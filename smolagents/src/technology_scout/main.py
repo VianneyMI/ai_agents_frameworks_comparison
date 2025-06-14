@@ -3,7 +3,7 @@
 from smolagents import GradioUI
 
 from technology_scout.agent import create_agent
-from technology_scout.tools import select_from_db_tool
+from technology_scout.tools.select_from_db import select_from_db_tool
 
 
 def main() -> None:
