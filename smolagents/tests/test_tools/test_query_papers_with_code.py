@@ -31,7 +31,10 @@ class TestGetAuthorPapers:
         assert isinstance(result, list)
         assert len(result) > 0
         assert isinstance(result[0], PaperAuthorPaper)
-        assert "lecun" in result[0].authors[0].full_name.lower()
+        authors_names_lowered = [
+            author_name.lower() for author_name in result[0].authors
+        ]
+        assert "yann lecun" in authors_names_lowered
 
 
 class TestSearchAuthorToolUsageByAgent:
@@ -41,19 +44,26 @@ class TestSearchAuthorToolUsageByAgent:
             tools=[search_author_tool],
         )
 
-        result = agent.run("Who is Yann LeCun?")
-        assert "lecun" in result.lower(), f"Result: {result}"
+        result = agent.run("What is Yann Lecun's id on Papers with Code?")
+        assert "yann-lecun" in result.lower(), f"Result: {result}"
 
 
 class TestGetAuthorPapersToolUsageByAgent:
     def test_on_simple_task(self) -> None:
         """Tests that the tool is used correctly by the agent."""
+
+        test_id = "learning-from-reward-free-offline-data-a-case"
+        expected_title = "Learning from Reward-Free Offline Data: A Case for Planning with Latent Dynamics Models"
+
+        task = f"""What's the title 
+        of the paper with id {test_id}?. Returns the title as received from PapersWithCode API."""
+
         agent = create_agent(
             tools=[get_author_papers_tool],
         )
 
-        result = agent.run("What papers has Yann LeCun written?")
-        assert "paper" in result.lower(), f"Result: {result}"
+        result = agent.run(task)
+        assert result == expected_title, f"Result: {result}"
 
 
 def main() -> None:

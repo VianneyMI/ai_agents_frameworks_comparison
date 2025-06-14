@@ -26,19 +26,18 @@ class Author(BaseModel):
 
 class PaperAuthorPaper(BaseModel):
     id: str
-    arxiv_id: str
-    nips_id: str
+    arxiv_id: str | None = None
+    nips_id: str | None = None
     title: str
-    url: str
-    url_abs: str
-    url_pdf: str
+    url_abs: str | None = None
+    url_pdf: str | None = None
     abstract: str
-    authors: list[Author]
-    published: str
-    conference: str
-    conference_url_abs: str
-    conference_url_pdf: str
-    proceeding: str
+    authors: list[str]
+    published: str | None = None
+    conference: str | None = None
+    conference_url_abs: str | None = None
+    conference_url_pdf: str | None = None
+    proceeding: str | None = None
 
 
 def search_author(name: str) -> list[Author]:
@@ -51,7 +50,7 @@ def search_author(name: str) -> list[Author]:
         ApiResponse[list[Author]]: List of matching authors
     """
     endpoint = f"{BASE_URL}/authors"
-    params = {"search": name}
+    params = {"q": name}
 
     try:
         response = requests.get(endpoint, params=params)
@@ -73,12 +72,13 @@ def get_author_papers(author_id: int) -> list[PaperAuthorPaper]:
         author_id (int): The ID of the author
 
     Returns:
-        List[Dict]: List of papers by the author
+        list[PaperAuthorPaper]: List of papers by the author
     """
     endpoint = f"{BASE_URL}/authors/{author_id}/papers"
+    params = {"page": 1, "items_per_page": 5}
 
     try:
-        response = requests.get(endpoint)
+        response = requests.get(endpoint, params=params)
         response.raise_for_status()
         response_json = response.json()
         response = ApiResponse[list[PaperAuthorPaper]].model_validate(response_json)
