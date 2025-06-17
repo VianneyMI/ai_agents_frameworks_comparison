@@ -21,6 +21,9 @@ def main() -> None:
         ],
     )
 
+    # For this to work, I had to comment a line in the llama-index codebase.
+    # Also as of now, when the LLM decide that it should use a tool, it does not really get executed and we don't get an answer.
+    # Maybe it's because we need to do the wiring ourselves.
     app = GradioAgentChatPack(agent)
     app.run()
 
