@@ -1,4 +1,5 @@
-from llama_index.core.agent.workflow import AgentWorkflow
+from llama_index.core.agent.react import ReActAgent
+from llama_index.core.memory import Memory
 from llama_index.llms.openai import OpenAI
 
 from llama_index.core.tools import FunctionTool
@@ -13,13 +14,21 @@ def get_llm(model_name: str = DEFAULT_MODEL_NAME) -> OpenAI:
     return OpenAI(model=model_name)
 
 
-def create_agent(llm: OpenAI, tools: list[FunctionTool] | None = None) -> AgentWorkflow:
+def get_memory() -> Memory:
+    """Returns a ChatMemoryBuffer."""
+    return Memory(token_limit=1_000_000)
+
+
+def create_agent(
+    llm: OpenAI = get_llm(), tools: list[FunctionTool] | None = None
+) -> ReActAgent:
     """Creates a technology scout agent."""
 
     if tools is None:
         tools = []
 
-    return AgentWorkflow.from_tools_or_functions(
+    return ReActAgent(
         tools,
         llm=llm,
+        memory=get_memory(),
     )
