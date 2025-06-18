@@ -10,3 +10,8 @@ dependencies = [
     "llama-index>=0.12.42",
     "llama-index-packs-gradio-agent-chat>=0.3.0",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest-asyncio>=1.0.0",
+]
