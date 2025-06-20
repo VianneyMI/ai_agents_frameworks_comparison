@@ -1,6 +1,7 @@
 import asyncio
 import pytest
 from technology_scout.agent import create_agent
+from technology_scout.agent_workflow import create_agent_workflow, run_agent_workflow
 from technology_scout.tools.query_papers_with_code import (
     search_author,
     get_author_papers,
@@ -82,20 +83,35 @@ class TestGetAuthorPapersToolUsageByAgent:
         result = await agent.aquery(task)
         assert result.response == expected_title, f"Result: {result}"
 
+    @pytest.mark.asyncio
+    async def test_on_simple_task_with_workflow(self) -> None:
+        """Tests that the tool is used correctly by the agent."""
+
+        test_id = "learning-from-reward-free-offline-data-a-case"
+        expected_title = "Learning from Reward-Free Offline Data: A Case for Planning with Latent Dynamics Models"
+
+        task = f"""What's the title 
+        of the paper with id {test_id}?. Returns the title as received from PapersWithCode API."""
+
+        agent = create_agent_workflow(tools=[get_author_papers_tool])
+        result = await run_agent_workflow(agent, task)
+        assert result == expected_title, f"Result: {result}"
+
 
 async def main() -> None:
     """Main function."""
-    test_search_author = TestSearchAuthor()
-    test_search_author.test_on_known_author()
+    # test_search_author = TestSearchAuthor()
+    # test_search_author.test_on_known_author()
 
-    test_get_author_papers = TestGetAuthorPapers()
-    test_get_author_papers.test_on_known_author_id()
+    # test_get_author_papers = TestGetAuthorPapers()
+    # test_get_author_papers.test_on_known_author_id()
 
-    test_search_author_tool_usage = TestSearchAuthorToolUsageByAgent()
-    await test_search_author_tool_usage.test_on_simple_task()
+    # test_search_author_tool_usage = TestSearchAuthorToolUsageByAgent()
+    # await test_search_author_tool_usage.test_on_simple_task()
 
     test_get_author_papers_tool_usage = TestGetAuthorPapersToolUsageByAgent()
-    await test_get_author_papers_tool_usage.test_on_simple_task()
+    # await test_get_author_papers_tool_usage.test_on_simple_task()
+    await test_get_author_papers_tool_usage.test_on_simple_task_with_workflow()
 
 
 if __name__ == "__main__":
