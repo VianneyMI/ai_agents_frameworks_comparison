@@ -93,7 +93,9 @@ class TestGetAuthorPapersToolUsageByAgent:
         task = f"""What's the title 
         of the paper with id {test_id}? which is written by Yann Lecun. Returns the title as received from PapersWithCode API."""
 
-        agent = create_agent_workflow(tools=[get_author_papers_tool])
+        agent = create_agent_workflow(
+            tools=[get_author_papers_tool, search_author_tool]
+        )
         result = await run_agent_workflow(agent, task)
         assert result == expected_title, f"Result: {result}"
 

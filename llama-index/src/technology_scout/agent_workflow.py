@@ -91,9 +91,8 @@ Key reasoning principles:
 4. BE PERSISTENT - don't give up after one failure
 
 When working with APIs and tools:
-- Author IDs are often formatted as lowercase-with-hyphens (e.g., "yann-lecun" for "Yann LeCun")
+
 - If a tool call fails, try alternative parameter formats
-- When searching for specific items in lists, iterate through all results
 - Pay attention to error messages and use them to inform your next actions
 
 Output formatting:
@@ -237,18 +236,9 @@ Remember: Each step should build toward the final goal. If one approach doesn't 
                     ObservationReasoningStep(observation=tool_output.content)
                 )
             except Exception as e:
-                error_msg = str(e)
-                # Provide specific guidance for common API errors
-                if "404" in error_msg and "authors" in error_msg:
-                    guidance = " This suggests the author ID format is incorrect. Try converting the author name to lowercase with hyphens (e.g., 'Yann LeCun' becomes 'yann-lecun')."
-                elif "404" in error_msg:
-                    guidance = " This suggests the resource wasn't found. Check if the ID format is correct."
-                else:
-                    guidance = " Let me try a different approach."
-
                 current_reasoning.append(
                     ObservationReasoningStep(
-                        observation=f"Error calling tool {tool.metadata.get_name()}: {e}.{guidance}"
+                        observation=f"Error calling tool {tool.metadata.get_name()}: {e}"
                     )
                 )
 
