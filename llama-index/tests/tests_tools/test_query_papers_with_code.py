@@ -91,7 +91,7 @@ class TestGetAuthorPapersToolUsageByAgent:
         expected_title = "Learning from Reward-Free Offline Data: A Case for Planning with Latent Dynamics Models"
 
         task = f"""What's the title 
-        of the paper with id {test_id}?. Returns the title as received from PapersWithCode API."""
+        of the paper with id {test_id}? which is written by Yann Lecun. Returns the title as received from PapersWithCode API."""
 
         agent = create_agent_workflow(tools=[get_author_papers_tool])
         result = await run_agent_workflow(agent, task)

@@ -1,6 +1,10 @@
+import asyncio
 import json
-from llama_index.core.agent.workflow import AgentWorkflow
-from technology_scout.agent_workflow import create_agent_workflow, run_agent_workflow
+from technology_scout.agent_workflow import (
+    create_agent_workflow,
+    run_agent_workflow,
+    ReasoningAgent,
+)
 import pytest
 import nest_asyncio
 
@@ -13,7 +17,7 @@ class TestCreateAgent:
         """Test that the agent is created with the default model."""
 
         agent = create_agent_workflow()
-        assert isinstance(agent, AgentWorkflow)
+        assert isinstance(agent, ReasoningAgent)
 
 
 class TestAgent:
@@ -24,3 +28,14 @@ class TestAgent:
         agent = create_agent_workflow()
         result = await run_agent_workflow(agent, "What is the capital of France?")
         assert "paris" in str(result).lower()
+
+
+async def main() -> None:
+    """Allows to run the tests without using pytest."""
+
+    test_agent = TestAgent()
+    await test_agent.test_on_simple_task()
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
