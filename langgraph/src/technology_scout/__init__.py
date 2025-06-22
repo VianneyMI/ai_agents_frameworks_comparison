@@ -1,0 +1,1 @@
+"""LangGraph Technology Scout package."""

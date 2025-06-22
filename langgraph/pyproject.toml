@@ -1,9 +1,15 @@
 [project]
 name = "technology_scout"
 version = "0.1.0"
-description = "Add your description here"
+description = "LangGraph Technology Scout Agent"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "langgraph>=0.4.8",
+    "langchain-openai>=0.1.0",
+    "langchain-core>=0.1.0",
+    "pandas>=2.0.0",
+    "requests>=2.25.0",
+    "pydantic>=2.0.0",
+    "pytest>=7.0.0",
 ]
