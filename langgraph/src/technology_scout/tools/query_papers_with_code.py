@@ -65,11 +65,11 @@ def search_author(name: str) -> list[Author]:
         return []
 
 
-def get_author_papers(author_id: int) -> list[PaperAuthorPaper]:
+def get_author_papers(author_id: str) -> list[PaperAuthorPaper]:
     """Get papers for a specific author by their ID.
 
     Args:
-        author_id (int): The ID of the author
+        author_id (str): The ID of the author
 
     Returns:
         list[PaperAuthorPaper]: List of papers by the author

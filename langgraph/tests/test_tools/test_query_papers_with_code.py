@@ -65,9 +65,11 @@ class TestGetAuthorPapersToolUsageByAgent:
     def test_on_simple_task(self) -> None:
         """Tests that the tool is used correctly by the agent."""
 
-        # Test asking for papers by a known author
-        task = """What are some papers by Yann LeCun? 
-        Please use the get_author_papers tool to find his papers."""
+        test_id = "learning-from-reward-free-offline-data-a-case"
+        expected_title = "Learning from Reward-Free Offline Data: A Case for Planning with Latent Dynamics Models"
+
+        task = f"""What's the title 
+        of the paper with id {test_id}? which is written by Yann Lecun. Returns the title as received from PapersWithCode API."""
 
         agent = create_agent(
             tools=[search_author_tool, get_author_papers_tool],
@@ -77,11 +79,8 @@ class TestGetAuthorPapersToolUsageByAgent:
 
         # Get the last message content
         last_message = result["messages"][-1]
-        content = last_message.content.lower()
-        # Check that some papers are mentioned and LeCun is mentioned
-        assert ("paper" in content or "research" in content) and "lecun" in content, (
-            f"Result: {content}"
-        )
+        content = last_message.content
+        assert content == expected_title, f"Result: {content}"
 
 
 def main() -> None:
