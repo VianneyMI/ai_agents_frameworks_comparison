@@ -1,107 +1,102 @@
-"""Tests for the query_papers_with_code tools."""
-
-import pytest
+from technology_scout.agent import create_agent
 from technology_scout.tools.query_papers_with_code import (
     search_author,
     get_author_papers,
     search_author_tool,
     get_author_papers_tool,
-    Author,
-    PaperAuthorPaper,
 )
+from technology_scout.tools.query_papers_with_code import Author, PaperAuthorPaper
 
 
 class TestSearchAuthor:
-    def test_search_existing_author(self) -> None:
-        """Test searching for an existing author."""
-
-        # Search for a well-known researcher
-        results = search_author("Yann LeCun")
-
-        assert isinstance(results, list)
-        if results:  # If we get results, check they're Author objects
-            assert all(isinstance(author, Author) for author in results)
-            # Check that at least one result contains the search term
-            names = [author.full_name.lower() for author in results]
-            assert any("lecun" in name for name in names)
-
-    def test_search_nonexistent_author(self) -> None:
-        """Test searching for a non-existent author."""
-
-        results = search_author("NonExistentAuthorXYZ123")
-
-        assert isinstance(results, list)
-        # Should be empty or very few results
-        assert len(results) <= 1
+    def test_on_known_author(self) -> None:
+        """Tests that the tool returns the correct author data for a known author."""
+        result = search_author("Yann LeCun")
+        assert isinstance(result, list)
+        assert len(result) > 0
+        assert isinstance(result[0], Author)
+        assert "lecun" in result[0].full_name.lower()
 
 
 class TestGetAuthorPapers:
-    def test_get_papers_for_valid_author_id(self) -> None:
-        """Test getting papers for a valid author ID."""
+    def test_on_known_author_id(self) -> None:
+        """Tests that the tool returns papers for a known author ID."""
+        # First get Yann LeCun's ID
+        authors = search_author("Yann LeCun")
+        assert len(authors) > 0
+        author_id = authors[0].id
 
-        # First search for an author to get a valid ID
-        authors = search_author("Geoffrey Hinton")
-
-        if authors:
-            author_id = int(authors[0].id)
-            papers = get_author_papers(author_id)
-
-            assert isinstance(papers, list)
-            if papers:  # If we get results, check they're PaperAuthorPaper objects
-                assert all(isinstance(paper, PaperAuthorPaper) for paper in papers)
-                # Check that papers have required fields
-                for paper in papers:
-                    assert hasattr(paper, "title")
-                    assert hasattr(paper, "abstract")
-                    assert hasattr(paper, "authors")
-
-    def test_get_papers_for_invalid_author_id(self) -> None:
-        """Test getting papers for an invalid author ID."""
-
-        papers = get_author_papers(999999)  # Assuming this ID doesn't exist
-
-        assert isinstance(papers, list)
-        # Should be empty for invalid ID
-        assert len(papers) == 0
+        # Then get their papers
+        result = get_author_papers(author_id)
+        assert isinstance(result, list)
+        assert len(result) > 0
+        assert isinstance(result[0], PaperAuthorPaper)
+        authors_names_lowered = [
+            author_name.lower() for author_name in result[0].authors
+        ]
+        assert "yann lecun" in authors_names_lowered
 
 
-class TestToolsIntegration:
-    def test_search_author_tool_format(self) -> None:
-        """Test that the search_author_tool is properly formatted as a LangChain tool."""
+class TestSearchAuthorToolUsageByAgent:
+    def test_on_simple_task(self) -> None:
+        """Tests that the tool is used correctly by the agent."""
+        agent = create_agent(
+            tools=[search_author_tool],
+        )
 
-        # Check that the tool has the required attributes
-        assert hasattr(search_author_tool, "name")
-        assert hasattr(search_author_tool, "description")
-        assert callable(search_author_tool)
+        result = agent.invoke(
+            {
+                "messages": [
+                    {
+                        "role": "user",
+                        "content": "What is Yann Lecun's id on Papers with Code?",
+                    }
+                ]
+            }
+        )
 
-    def test_get_author_papers_tool_format(self) -> None:
-        """Test that the get_author_papers_tool is properly formatted as a LangChain tool."""
+        # Get the last message content
+        last_message = result["messages"][-1]
+        content = last_message.content.lower()
+        assert "yann-lecun" in content, f"Result: {content}"
 
-        # Check that the tool has the required attributes
-        assert hasattr(get_author_papers_tool, "name")
-        assert hasattr(get_author_papers_tool, "description")
-        assert callable(get_author_papers_tool)
+
+class TestGetAuthorPapersToolUsageByAgent:
+    def test_on_simple_task(self) -> None:
+        """Tests that the tool is used correctly by the agent."""
+
+        # Test asking for papers by a known author
+        task = """What are some papers by Yann LeCun? 
+        Please use the get_author_papers tool to find his papers."""
+
+        agent = create_agent(
+            tools=[search_author_tool, get_author_papers_tool],
+        )
+
+        result = agent.invoke({"messages": [{"role": "user", "content": task}]})
+
+        # Get the last message content
+        last_message = result["messages"][-1]
+        content = last_message.content.lower()
+        # Check that some papers are mentioned and LeCun is mentioned
+        assert ("paper" in content or "research" in content) and "lecun" in content, (
+            f"Result: {content}"
+        )
 
 
 def main() -> None:
-    """Main function for running tests."""
+    """Main function."""
+    test_search_author = TestSearchAuthor()
+    test_search_author.test_on_known_author()
 
-    print("Running search author tests...")
-    test_search = TestSearchAuthor()
-    test_search.test_search_existing_author()
-    test_search.test_search_nonexistent_author()
+    test_get_author_papers = TestGetAuthorPapers()
+    test_get_author_papers.test_on_known_author_id()
 
-    print("Running get author papers tests...")
-    test_papers = TestGetAuthorPapers()
-    test_papers.test_get_papers_for_valid_author_id()
-    test_papers.test_get_papers_for_invalid_author_id()
+    test_search_author_tool_usage = TestSearchAuthorToolUsageByAgent()
+    test_search_author_tool_usage.test_on_simple_task()
 
-    print("Running tools integration tests...")
-    test_integration = TestToolsIntegration()
-    test_integration.test_search_author_tool_format()
-    test_integration.test_get_author_papers_tool_format()
-
-    print("All tests completed!")
+    test_get_author_papers_tool_usage = TestGetAuthorPapersToolUsageByAgent()
+    test_get_author_papers_tool_usage.test_on_simple_task()
 
 
 if __name__ == "__main__":

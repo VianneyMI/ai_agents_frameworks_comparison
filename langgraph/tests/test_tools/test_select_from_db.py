@@ -44,17 +44,9 @@ class TestSelectFromDbToolUsageByAgent:
             }
         )
 
-        # Extract the response content
-        assert result is not None
-        assert "messages" in result
-
         # Get the last message content
         last_message = result["messages"][-1]
-        if hasattr(last_message, "content"):
-            content = last_message.content.lower()
-        else:
-            content = str(last_message).lower()
-
+        content = last_message.content.lower()
         assert "lex fridman" in content, f"Result: {result}"
 
 

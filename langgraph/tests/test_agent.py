@@ -9,7 +9,6 @@ class TestCreateAgent:
         """Test that the agent is created with the default model."""
 
         agent = create_agent()
-        # LangGraph agents are more complex objects, so we just check if we get something
         assert agent is not None
 
 
@@ -18,8 +17,6 @@ class TestAgent:
         """Test that the agent can solve a simple task."""
 
         agent = create_agent()
-
-        # LangGraph agents expect messages in a specific format
         result = agent.invoke(
             {
                 "messages": [
@@ -28,15 +25,7 @@ class TestAgent:
             }
         )
 
-        # Extract the response content
-        assert result is not None
-        assert "messages" in result
-
         # Get the last message content
         last_message = result["messages"][-1]
-        if hasattr(last_message, "content"):
-            content = last_message.content.lower()
-        else:
-            content = str(last_message).lower()
-
+        content = last_message.content.lower()
         assert "paris" in content
